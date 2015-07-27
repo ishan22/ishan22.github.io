@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+    
+    
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+        <div class="header">
+            <h1 class="cover-heading">Hello, I am Ishan Mitra.</h1>
+            <p class="lead">I am a developer from California.</p>
+            <button id="click">Learn About me</button>
+        </div>
+      
+    <div class="container">
+      
+        <div class="about-section">
+
+            <h3>About Me</h3>
+            
+            <div class="face-image">
+                <img src="images/face1.jpg">
+            </div>
+            
+            <p><strong>I am a young programmer in the Bay Area.</strong> When I'm not studying or programming, I  love to play baskteball with my friends. I am an active member in my school's robotics team. I love to program in my free time as well, creating friendly apps for others.</p>
+
+            <div>
+              <h3><u>Skills</u></h3>
+              <ul>
+                  <li>Android Development</li>
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+              </ul>
+            </div>
+
+        </div>
+      
+    </div>
+    
+    <hr>
+    
+    
+    <div class="container">
+        
+        <div class="works">
+            
+            <h3>Things I've Done</h3>
+            
+            
+            <h5>Pong</h5>
+
+            <div class="images">
+                <a href="pong.html"><img src="images/pong.jpg"></a>
+            </div>
+            
+            <hr>
+            
+        </div>
+        
+    </div>
+    
+      
+    <footer>
+      <div class="links">
+          <p style="text-transform: none"><strong>Email: </strong>ishanmitra52@gmail.com</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#click").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $(".about-section").offset().top
+                    }, 1000);
+            });
+        });
+    </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

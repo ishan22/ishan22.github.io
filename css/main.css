@@ -1,0 +1,96 @@
+
+
+/*
+ * Base structure
+ */
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);  
+    background-image: url(../images/new-limits.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*
+ * Footer
+ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #35E8B5; /* IE8 proofing */
+    color: rgba(255,255,255,.5);
+}
+
+h3{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #3498db;
+}
+
+.about-section{
+    color: black;
+    text-shadow: none;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+.face-image{
+    width: 100%;
+    text-align: center;
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    clear: both;
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+button{
+    border-color: white;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+}
+
+button:hover{
+    border-color: white;
+    color: white;
+    background: #3498db;
+}
+
