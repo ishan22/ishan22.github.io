@@ -1,2 +1,2 @@
 # ishan22.github.io
-My website!! yayyyy!!
+This is my website! You should check it out!
