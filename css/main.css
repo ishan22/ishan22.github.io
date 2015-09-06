@@ -18,7 +18,7 @@ body{
     color: white;
     font-weight: 900;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);  
-    background-image: url(../images/Golden-Gate-Bridge.jpg);
+    background-image: url(../images/Golden-Gate-Bridge.gif);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -41,7 +41,6 @@ body{
 .lead.visible{
     opacity: 1;
 }
-
 
 /*
  * Footer
