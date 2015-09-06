@@ -15,12 +15,31 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #66FFFF;
+    color: white;
     font-weight: 900;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);  
     background-image: url(../images/Golden-Gate-Bridge.jpg);
     background-attachment: fixed;
     background-size: cover;
+}
+
+.cover-heading{
+    background-color: rgba(52,152,219, 0.8);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.lead{
+    opacity: 0;
+      -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.lead.visible{
+    opacity: 1;
 }
 
 

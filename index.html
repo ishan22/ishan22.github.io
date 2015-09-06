@@ -35,8 +35,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     
         <div class="header">
-            <h1 class="cover-heading">Hello, I am Ishan Mitra.</h1>
-            <p class="lead">I am a developer from California.</p>
+            <h1 class="cover-heading">I am <span class="changeable">Ishan Mitra.</span></h1>
+            <p class="lead">Developer  |  Human?  |  Sleep Enthusiast</p>
             <button id="click">Learn About me</button>
         </div>
       
@@ -90,6 +90,14 @@
         
     </div>
     
+    <hr>
+    
+    <div class="container">
+        <div class="blog">
+            <h3>My Thoughts</h3>
+        </div>
+    </div>
+    
       
     <footer>
       <div class="links">
@@ -101,13 +109,22 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="typed.js/dist/typed.min.js"></script>
     <script>
+        
         $(document).ready(function (){
             $("#click").click(function (){
                     $('html, body').animate({
                         scrollTop: $(".about-section").offset().top
                     }, 1000);
             });
+            
+            $('.changeable').typed({
+                strings: ["a Sleep Enthusiast.^200", "a Human?^200", "a Developer.^200", "Ishan Mitra."],
+                callback: function(){
+                    $('.lead').addClass('visible');
+                }
+            })
         });
     </script>
 
