@@ -1,5 +1,4 @@
-
-
+    
 /*
  * Base structure
  */
@@ -17,25 +16,23 @@ body{
     height: 100vh;
     color: white;
     font-weight: 900;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);  
-    background-image: url(../images/Golden-Gate-Bridge.gif);
+    background-image: url(../images/Meteor-Galaxy.png);
     background-attachment: fixed;
     background-size: cover;
 }
 
-.cover-heading{
-    background-color: rgba(52,152,219, 0.8);
-    border-radius: 10px;
-    padding: 3px;
+.changeable{
+    color: #15f5ff;
 }
+
 
 .lead{
     opacity: 0;
       -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .lead.visible{
@@ -46,21 +43,13 @@ body{
  * Footer
  */
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #35E8B5; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
-}
 
 h3{
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #3498db;
+    color: #999;
 }
 
 .about-section{
@@ -84,8 +73,8 @@ h3{
 
 footer{
     clear: both;
-    background-color: #3498db;
-    color: white;
+    background-color: #333;
+    color: #15f5ff;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
@@ -94,10 +83,10 @@ footer{
     padding-top: 20px;
 }
 
-button{
-    border-color: white;
+#click{
+    border-color: #343d46;
     color: white;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
     transition: 0.2s ease-in;
     -moz-transition: 0.2s ease-in;
@@ -107,9 +96,22 @@ button{
     z-index: 1;
 }
 
-button:hover{
-    border-color: white;
-    color: white;
-    background: #3498db;
+#click:hover{
+    cursor: pointer;
+    border-color: #343d46;
+    color: #15f5ff;
+}
+
+.visited{   
+    cursor: pointer;
+    border-color: #343d46;
+    color: #15f5ff;
+}
+
+@media screen and (max-width: 1600px) {
+    .header {
+        background-color: #333;
+        background-image: none;
+    }
 }
 

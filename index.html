@@ -5,7 +5,6 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Welcome!</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -36,8 +35,8 @@
     
         <div class="header">
             <h1 class="cover-heading">I am <span class="changeable">Ishan Mitra.</span></h1>
-            <p class="lead">Developer  |  Human?  |  Sleep Enthusiast</p>
-            <button id="click">Learn About me</button>
+            <p class="lead">Food Junkie  |  Human?  |  Developer</p>
+            <a id="click">Learn About me</a>
         </div>
       
     <div class="container">
@@ -53,7 +52,7 @@
             <p><strong>I am a young programmer in the Bay Area.</strong> When I'm not studying or programming, I  love to play baskteball with my friends. I am an active member in my school's robotics team. I love to program in my free time as well, creating friendly apps for others.</p>
 
             <div>
-              <h3><u>Skills</u></h3>
+              <h3>Skills</h3>
               <ul>
                   <li>Android Development</li>
                   <li>Java</li>
@@ -61,6 +60,7 @@
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
+                  <li>Adobe Illustrator</li>
               </ul>
             </div>
 
@@ -93,12 +93,12 @@
     <hr>
     
     <div class="container">
-        <div class="blog">
-            <h3>My Thoughts</h3>
-        </div>
+        <div class="works">
+            <h3 class="thoughts">Thoughts</h3>
+            
+        </div>  
     </div>
     
-      
     <footer>
       <div class="links">
           <p style="text-transform: none"><strong>Email: </strong>ishanmitra52@gmail.com</p>
@@ -111,20 +111,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="typed.js/dist/typed.min.js"></script>
     <script>
-        
         $(document).ready(function (){
             $("#click").click(function (){
+                    $("#click").addClass('visited');
                     $('html, body').animate({
                         scrollTop: $(".about-section").offset().top
                     }, 1000);
             });
             
-            $('.changeable').typed({
-                strings: ["a Sleep Enthusiast.^200", "a Human?^200", "a Developer.^200", "Ishan Mitra."],
-                callback: function(){
-                    $('.lead').addClass('visible');
-                }
-            })
+            if($('body').width() > 1600){
+                $('.changeable').typed({
+                    strings: ["a Food Junkie.^200", "a Human?^200", "a Developer!^200", "Ishan Mitra .-."],
+                    callback: function(){
+                        $('.lead').addClass('visible');
+                    }
+                });
+            }else{
+                $('.lead').addClass('visible');
+            }
+            
+            for(index = 1; index < 4; index++){
+                $('.thoughts').append("<a href=" + "blogs/blog-" + index + ".html><h3>Blog" + index + "</h3></a>");
+            }
         });
     </script>
 
