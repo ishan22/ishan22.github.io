@@ -6,112 +6,96 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: #FFFDFB;
 }
 
-.header{
+.centered{
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-    font-weight: 900;
-    background-image: url(../images/Meteor-Galaxy.png);
-    background-attachment: fixed;
-    background-size: cover;
+    flex-direction: column-reverse;
 }
 
-.changeable{
-    color: #15f5ff;
+.menu {
+    margin: auto;
 }
 
-
-.lead{
-    opacity: 0;
-      -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
+.menu-links {
+    margin: auto;
 }
 
-.lead.visible{
-    opacity: 1;
+.menu-links .menu-link {
+    color: rgba(8, 129, 163, 0.8);
 }
 
-/*
- * Footer
- */
-
-
-h3{
+.links {
+    order: 2;
+    padding: 0;
     text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #999;
+    list-style: none;
+    display: inline-flex;
+
 }
 
-.about-section{
-    color: black;
-    text-shadow: none;
-    background-color: white;
-    padding: 20px 50px;
+.menu-link {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #0881A3;
+    transition: 0.23s ease-in;
+    border-radius: 5px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    padding: 5px;
 }
 
-.face-image{
-    width: 100%;
+.menu-link:hover{
+    background-color: #FFFDFB;
+    color: #FFD6A4;
+}
+
+.profile {
+    margin: auto;
+    padding-top: 50px;
+    order: 2;
+    width: 50%;
     text-align: center;
 }
 
-.works{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.pure-img {
+    margin: inherit;
+    border-radius: 200px;
+    height: 15em;
+    width: 15em;
 }
 
-footer{
-    clear: both;
-    background-color: #333;
-    color: #15f5ff;
+.name {
     text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
 }
 
-#click{
-    border-color: #343d46;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.2s ease-in;
-    -moz-transition: 0.2s ease-in;
-    -webkit-transition: 0.2s ease-in;
-    overflow:hidden;
-    background: none;
-    z-index: 1;
+.tagline {
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
-#click:hover{
-    cursor: pointer;
-    border-color: #343d46;
-    color: #15f5ff;
+.large{
+    font-size: 25px !important;
 }
 
-.visited{   
-    cursor: pointer;
-    border-color: #343d46;
-    color: #15f5ff;
+.home {
+    margin: auto;
+    margin-top: 50%;
 }
 
-@media screen and (max-width: 1600px) {
-    .header {
-        background-color: #333;
-        background-image: none;
+@media screen and (max-width: 525px) {
+    .links{
+        display: flex;
+        flex-direction: column;
     }
 }
 
