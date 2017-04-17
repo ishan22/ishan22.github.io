@@ -1,0 +1,36 @@
+    
+/*
+ * Base structure
+ */
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFDFB;
+}
+
+.centered {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 100%;
+}
+
+.section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    
+}
+
+@media screen and (max-width: 525px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
